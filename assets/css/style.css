@@ -1,0 +1,155 @@
+
+/* style for the body */
+body {
+    background-image: url('../images/background.png');
+    height: 100%;
+    border-color: #cccccc;
+}
+/* navigation bar style */
+.top {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-bottom: solid #cccccc;
+
+}
+
+/* header details */
+.header{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* display of links in navigation bar.  I tried float but unable to get the expected result.
+Would you please suggest any other better way to accomplish this? */
+.navlinks{
+    display:inline;
+    padding-left: 800px;
+    font-size: 18px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Name styling */
+.myname {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    width: 270px;
+    padding: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color:rgb(17, 0, 255);
+}
+
+/* visited link */
+a:visited {
+     color:red;
+}
+
+/* mouse over link */
+a:hover {
+    color:greenyellow;
+}
+
+/* selected link */
+a:active {
+     color: rgb(55, 0, 255);
+}
+
+li{
+    display: inline;
+
+}
+
+.about{
+    width: 960px;
+    margin: 0 auto;
+}
+/* image details */
+#face{
+    width:150px;
+    height: 150px;
+    float: left;
+    margin: 10px;
+}
+
+/* headedr 2 style */
+h2{
+    color: #4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* content style */
+p{
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 30px;
+}
+/* main content section styling */
+section{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #ffffff;
+    border: solid 1px #dddddd;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+/* footer details */
+.footer{
+    background-color: #666666;
+    color: #dddddd
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
+    clear: both;
+    text-align: center;
+    padding: 30px;
+    border-top: 8px solid #4aaaa5;
+}
+
+/* images placement */
+.pics{
+    padding: 20px;
+    float: left;
+    width:35%;
+    }
+
+.row::after{
+    content:"";
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* labels in the contact us form.  Not sure how else to do this. :( */
+label{
+    margin: 20px;
+}
+
+#name, #email, #message {
+    width: 90%;
+    padding:10px;
+    border: 1px solid #ccc;
+    margin-top:10px;
+    margin-bottom:25px;
+    margin-left:20px;
+    margin-right:10px;
+    resize: vertical;
+
+}
+
+/* submit button style */
+.submit {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: inherit;
+    padding: 10px;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
